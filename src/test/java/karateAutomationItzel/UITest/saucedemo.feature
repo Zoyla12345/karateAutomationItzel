@@ -2,7 +2,7 @@ Feature: Automatizar la página saucedemo
   
   Scenario: full script
   #Login
-  * configure driver = {type: 'chromedriver', executable: 'C:\\browserdrivers\\chromedriver.exe'}
+  * configure driver = {type: 'geckodriver', executable: 'C:\\browserdrivers\\geckodriver.exe'}
     Given driver 'https://www.saucedemo.com/'
     And driver.maximize()
     And input("//*[@id='user-name']","standard_user")
